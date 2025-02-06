@@ -16,21 +16,11 @@ Siga os passos abaixo para configurar, rodar e testar a API:
 
       `yarn install`
 
-2.  **Buildar a aplicação:** Compile o código TypeScript para JavaScript.
-
-    - **Usando npm:**
-
-      `npm run build`
-
-    - **Usando yarn:**
-
-      `yarn build`
-
-3.  **Subir os contêineres Docker:** Com o Docker Compose, você pode rodar a aplicação e o banco de dados PostgreSQL em contêineres separados.
+2.  **Subir os contêineres Docker:** Com o Docker Compose, você pode rodar a aplicação e o banco de dados PostgreSQL em contêineres separados.
 
     `docker-compose up`
 
-4.  **Rodar os testes:** Após rodar os contêineres, você pode executar os testes.
+3.  **Rodar os testes:** Após rodar os contêineres, você pode executar os testes.
 
     - **Usando npm:**
 
