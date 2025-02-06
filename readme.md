@@ -10,13 +10,9 @@ Siga os passos abaixo para configurar, rodar e testar a API:
 
     - **Usando npm:**
 
-      bash
-
       `npm install`
 
     - **Usando yarn:**
-
-      bash
 
       `yarn install`
 
@@ -24,19 +20,13 @@ Siga os passos abaixo para configurar, rodar e testar a API:
 
     - **Usando npm:**
 
-      bash
-
       `npm run build`
 
     - **Usando yarn:**
 
-      bash
-
       `yarn build`
 
 3.  **Subir os contêineres Docker:** Com o Docker Compose, você pode rodar a aplicação e o banco de dados PostgreSQL em contêineres separados.
-
-    bash
 
     `docker-compose up`
 
@@ -44,13 +34,9 @@ Siga os passos abaixo para configurar, rodar e testar a API:
 
     - **Usando npm:**
 
-      bash
-
       `npm run test:docker`
 
     - **Usando yarn:**
-
-      bash
 
       `yarn test:docker`
 
@@ -94,8 +80,6 @@ Este projeto utiliza o Docker e Docker Compose para configurar e rodar os servi�
 
 Clone o repositório para sua máquina local:
 
-bash
-
 `git clone <URL-DO-REPOSITORIO>
 cd <NOME-DO-REPOSITORIO>`
 
@@ -103,15 +87,11 @@ cd <NOME-DO-REPOSITORIO>`
 
 Para construir as imagens do Docker, execute o seguinte comando:
 
-bash
-
 `docker-compose build`
 
 #### 3\. Subindo os Contêineres
 
 Para rodar os contêineres, execute o comando abaixo. Isso iniciará os serviços do banco de dados PostgreSQL e a API.
-
-bash
 
 `docker-compose up`
 
@@ -124,8 +104,6 @@ Isso iniciará dois contêineres:
 
 Após rodar os contêineres, a API estará disponível na porta `3001` (como configurado no arquivo `docker-compose.yml`):
 
-bash
-
 `http://localhost:3001`
 
 ### Localmente
@@ -136,15 +114,11 @@ Se preferir rodar a aplicação sem Docker, siga as instruções abaixo.
 
 Para instalar as dependências do projeto, execute o seguinte comando:
 
-bash
-
 `npm install`
 
 #### 2\. Rodar a Aplicação em Modo Desenvolvimento
 
 Execute o servidor em modo de desenvolvimento com `nodemon`:
-
-bash
 
 `npm run dev`
 
@@ -153,8 +127,6 @@ Isso iniciará o servidor com recarga automática a cada alteração no código.
 #### 3\. Rodar as Migrações
 
 Para rodar as migrações do banco de dados localmente, execute:
-
-bash
 
 `npm run migrate`
 
@@ -166,43 +138,29 @@ Aqui estão alguns dos comandos principais que você pode executar no projeto.
 
 - **Rodar a Aplicação em Desenvolvimento**:
 
-bash
-
 `npm run dev`
 
 - **Compilar o Código TypeScript**:
-
-bash
 
 `npm run build`
 
 - **Iniciar o Servidor Localmente (após o build)**:
 
-bash
-
 `npm run start`
 
 - **Rodar as Migrações**:
-
-bash
 
 `npm run migrate`
 
 - **Criar uma Nova Migração**:
 
-bash
-
 `npm run migrate:create --name nome_da_migracao`
 
 - **Rodar os Testes**:
 
-bash
-
 `npm run test`
 
 - **Rodar os Testes com Docker**:
-
-bash
 
 `docker-compose run --rm api npm run test`
 
@@ -216,8 +174,6 @@ O projeto usa [Vitest](https://vitest.dev/) para os testes.
 
 Para rodar os testes localmente, execute o seguinte comando:
 
-bash
-
 `npm run test`
 
 Isso executará os testes definidos no projeto.
@@ -225,8 +181,6 @@ Isso executará os testes definidos no projeto.
 ### Rodando Testes com Docker
 
 Se preferir rodar os testes dentro do Docker, use o comando:
-
-bash
 
 `docker-compose run --rm api npm run test`
 
@@ -236,21 +190,15 @@ bash
 
 As migrações do banco de dados podem ser executadas utilizando o comando:
 
-bash
-
 `npm run migrate`
 
 Se você precisar gerar uma nova migração, utilize:
-
-bash
 
 `npm run migrate:create --name nome_da_migracao`
 
 ### Migrando o Banco de Dados com Docker
 
 Se você estiver utilizando o Docker, para rodar as migrações dentro do contêiner, use:
-
-bash
 
 `docker-compose run --rm api npm run migrate`
 
@@ -259,8 +207,6 @@ bash
 ## Variáveis de Ambiente
 
 Certifique-se de configurar as variáveis de ambiente corretamente. Crie um arquivo `.env` na raiz do projeto com as seguintes variáveis:
-
-bash
 
 `DB_USER=<seu_usuario>
 DB_PASSWORD=<sua_senha>
@@ -275,8 +221,6 @@ Alternativamente, você pode definir essas variáveis diretamente no `docker-com
 ## Desligando os Contêineres
 
 Para desligar os contêineres, execute o comando:
-
-bash
 
 `docker-compose down`
 
