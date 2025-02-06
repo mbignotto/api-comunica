@@ -18,7 +18,7 @@ Siga os passos abaixo para configurar, rodar e testar a API:
 
 2.  **Subir os contêineres Docker:** Com o Docker Compose, você pode rodar a aplicação e o banco de dados PostgreSQL em contêineres separados.
 
-    `docker-compose up`
+    `docker-compose up -d`
 
 3.  **Rodar os testes:** Após rodar os contêineres, você pode executar os testes.
 
